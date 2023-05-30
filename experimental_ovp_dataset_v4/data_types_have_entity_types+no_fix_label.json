@@ -1,0 +1,74 @@
+{
+    "entities": {
+      "sci_Material": {
+        "short": "sci_Material",
+        "verbose": "sci_Material"
+      },
+      "sem_OtherScientificTerm": {
+        "short": "sem_OtherScientificTerm",
+        "verbose": "sem_OtherScientificTerm"
+      },
+      "sci_OtherScientificTerm": {
+        "short": "sci_OtherScientificTerm",
+        "verbose": "sci_OtherScientificTerm"
+      },
+      "sci_Generic": {
+        "short": "sci_Generic",
+        "verbose": "sci_Generic"
+      },
+      "sci_Method": {
+        "short": "sci_Method",
+        "verbose": "sci_Method"
+      },
+      "sci_Metric": {
+        "short": "sci_Metric",
+        "verbose": "sci_Metric"
+      },
+      "sci_Task": {
+        "short": "sci_Task",
+        "verbose": "sci_Task"
+      }
+    },
+    "relations": {
+      "Compare": {
+        "short": "Compare",
+        "verbose": "Compare",
+        "symmetric": false
+      },
+      "Part-of": {
+        "short": "Part-of",
+        "verbose": "Part-of",
+        "symmetric": false
+      },
+      "Used-for": {
+        "short": "Used-for",
+        "verbose": "Used-for",
+        "symmetric": false
+      },
+      "Feature-of": {
+        "short": "Feature-of",
+        "verbose": "Feature-of",
+        "symmetric": false
+      },
+      "Evaluate-for": {
+        "short": "Evaluate-for",
+        "verbose": "Evaluate-for",
+        "symmetric": false
+      },
+      "Hyponym-of": {
+        "short": "Hyponym-of",
+        "verbose": "Hyponym-of",
+        "symmetric": false
+      },
+      "Conjunction": {
+        "short": "Conjunction",
+        "verbose": "Conjunction",
+        "symmetric": false
+      },
+      "Topic": {
+        "short": "Topic",
+        "verbose": "Topic",
+        "symmetric": false
+      }
+    }
+  }
