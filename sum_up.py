@@ -8,7 +8,7 @@ def sum_up(label_name, type="last"):
     print(list_results)
     ner_f1_list, re_f1_list = [], []
     for sub_name in list_results:
-        result_path = os.path.join(path, sub_name, "eval_test.csv")
+        result_path = os.path.join(path, sub_name, "eval_valid.csv")
         result_data = pd.read_csv(result_path, delimiter=";")
         if len(result_data) < 1: 
             continue
@@ -32,4 +32,4 @@ def sum_up(label_name, type="last"):
     print("Average micro RE F1 score: {}".format(np.mean(re_f1_list)))
 
 
-sum_up("eval_standard_sci", "best")
+sum_up("inverse_loss", "last")

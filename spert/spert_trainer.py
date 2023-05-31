@@ -86,7 +86,7 @@ class SpERTTrainer(BaseTrainer):
         entity_criterion = torch.nn.CrossEntropyLoss(reduction='none')
 
         # rel_soft_criterion = torch.nn.BCEWithLogitsLoss(reduction='none')
-        rel_soft_criterion = torch.nn.KLDivLoss(reduction="none", log_target=True)
+        rel_soft_criterion = torch.nn.KLDivLoss(reduction="none", log_target=False)
         # rel_soft_criterion = torch.nn.BCELoss(reduction='none')
         compute_loss = SpERTLoss(rel_criterion, entity_criterion, model, optimizer, scheduler, args.max_grad_norm)
         compute_soft_loss = SpERTRelationSoftLoss(rel_soft_criterion, entity_criterion, model, optimizer, scheduler, args.max_grad_norm, output_head="log_softmax", inverse=args.inverse_soft_loss)
